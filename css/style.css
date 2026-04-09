@@ -1,0 +1,162 @@
+/* ===== RESET & BASE ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* ===== SCROLLBAR (design moderne) ===== */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #020617;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #06b6d4;
+  border-radius: 10px;
+}
+
+/* ===== ANIMATIONS ===== */
+
+/* Fade in */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 1s ease forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Reveal au scroll */
+.reveal {
+  opacity: 0;
+  transform: translateY(60px);
+  transition: all 1s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Animation zoom légère */
+.zoom-in {
+  transform: scale(0.95);
+  opacity: 0;
+  animation: zoomIn 0.8s ease forwards;
+}
+
+@keyframes zoomIn {
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* ===== HOVER EFFECTS ===== */
+
+/* Cartes */
+.card-hover {
+  transition: all 0.4s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 20px 40px rgba(0, 255, 255, 0.1);
+}
+
+/* Boutons */
+button,
+a {
+  transition: all 0.3s ease;
+}
+
+/* Glow cyan */
+.glow:hover {
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.4);
+}
+
+/* ===== IMAGE HERO EFFECT ===== */
+img {
+  transition: all 0.4s ease;
+}
+
+img:hover {
+  transform: scale(1.03);
+}
+
+/* ===== NAVIGATION ===== */
+nav a {
+  position: relative;
+}
+
+nav a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0%;
+  height: 2px;
+  background: #06b6d4;
+  transition: width 0.3s;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+/* ===== MOBILE MENU ===== */
+#mobile-menu {
+  animation: slideDown 0.4s ease;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===== SECTION SPACING FIX ===== */
+section {
+  scroll-margin-top: 100px;
+}
+
+/* ===== TEXT GRADIENT (optionnel stylé) ===== */
+.text-gradient {
+  background: linear-gradient(90deg, #06b6d4, #22c55e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* ===== SHADOW PREMIUM ===== */
+.shadow-soft {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+/* ===== RESPONSIVE FIX ===== */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.5rem !important;
+  }
+
+  h2 {
+    font-size: 1.8rem !important;
+  }
+}
