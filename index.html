@@ -1,0 +1,310 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Franck Boris Mengata Enoto | Développeur Web & Solutions Digitales</title>
+  <meta name="description" content="Portfolio professionnel de Franck Boris Mengata Enoto, développeur web, créateur d'applications métiers et solutions digitales au Cameroun." />
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Fichier CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="bg-slate-950 text-white scroll-smooth">
+
+  <!-- HEADER -->
+  <header class="fixed top-0 left-0 w-full z-50 bg-slate-950/80 backdrop-blur border-b border-white/10">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <a href="#home" class="text-2xl font-extrabold tracking-wide text-cyan-400">FranckDev237</a>
+
+      <nav class="hidden md:flex gap-6 text-sm font-medium text-slate-200">
+        <a href="#about" class="hover:text-cyan-400 transition">À propos</a>
+        <a href="#services" class="hover:text-cyan-400 transition">Services</a>
+        <a href="#skills" class="hover:text-cyan-400 transition">Compétences</a>
+        <a href="#projects" class="hover:text-cyan-400 transition">Projets</a>
+        <a href="#experience" class="hover:text-cyan-400 transition">Expériences</a>
+        <a href="#education" class="hover:text-cyan-400 transition">Formations</a>
+        <a href="#contact" class="hover:text-cyan-400 transition">Contact</a>
+      </nav>
+
+      <!-- Bouton menu mobile -->
+      <button id="menu-btn" class="md:hidden text-cyan-400 text-3xl">☰</button>
+    </div>
+
+    <!-- Menu mobile -->
+    <div id="mobile-menu" class="hidden md:hidden px-6 pb-4 flex flex-col gap-4 text-slate-200 bg-slate-950">
+      <a href="#about" class="hover:text-cyan-400 transition">À propos</a>
+      <a href="#services" class="hover:text-cyan-400 transition">Services</a>
+      <a href="#skills" class="hover:text-cyan-400 transition">Compétences</a>
+      <a href="#projects" class="hover:text-cyan-400 transition">Projets</a>
+      <a href="#experience" class="hover:text-cyan-400 transition">Expériences</a>
+      <a href="#education" class="hover:text-cyan-400 transition">Formations</a>
+      <a href="#contact" class="hover:text-cyan-400 transition">Contact</a>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="home" class="min-h-screen flex items-center bg-gradient-to-br from-slate-950 via-slate-900 to-cyan-950 px-6 pt-32">
+    <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+      
+      <div class="reveal">
+        <p class="text-cyan-400 font-semibold mb-4 tracking-[0.2em] uppercase">Portfolio Professionnel</p>
+
+        <h1 class="text-5xl md:text-6xl font-extrabold leading-tight mb-6">
+          Franck Boris <span class="text-cyan-400">Mengata Enoto</span>
+        </h1>
+
+        <h2 class="text-2xl md:text-3xl font-semibold text-slate-200 mb-6">
+          Développeur Web • Applications Métiers • Solutions Digitales
+        </h2>
+
+        <p class="text-lg text-slate-300 leading-relaxed mb-8 max-w-2xl">
+          Je conçois des sites web, applications métiers, plateformes numériques et solutions techniques adaptées aux entreprises, institutions et projets innovants.
+        </p>
+
+        <div class="flex flex-wrap gap-4">
+          <a href="#projects" class="bg-cyan-400 text-slate-950 px-6 py-3 rounded-2xl font-bold hover:scale-105 transition">
+            Voir mes projets
+          </a>
+          <a href="#contact" class="border border-cyan-400 text-cyan-400 px-6 py-3 rounded-2xl font-bold hover:bg-cyan-400 hover:text-slate-950 transition">
+            Me contacter
+          </a>
+          <a href="assets/CV-Franck-Boris-Mengata-Enoto.pdf" target="_blank" class="bg-white/10 px-6 py-3 rounded-2xl font-bold hover:bg-white/20 transition">
+            Télécharger mon CV
+          </a>
+        </div>
+      </div>
+
+      <div class="flex justify-center reveal">
+        <div class="relative">
+          <div class="absolute inset-0 bg-cyan-400/20 blur-3xl rounded-full"></div>
+          <img src="assets/photo.jpg" alt="Photo de Franck Boris Mengata Enoto" class="relative w-72 h-72 md:w-96 md:h-96 object-cover rounded-[2rem] border border-cyan-400/30 shadow-2xl" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="py-24 px-6 bg-slate-900">
+    <div class="max-w-6xl mx-auto reveal">
+      <h2 class="text-4xl font-bold mb-8 text-cyan-400">À propos</h2>
+      <p class="text-lg text-slate-300 leading-8 max-w-4xl">
+        Développeur web passionné avec plusieurs années d’expérience, je conçois et développe des sites web, applications métiers et plateformes numériques répondant à des besoins concrets.
+        J’interviens également sur la maintenance informatique, les réseaux, l’hébergement, l’optimisation web, ainsi que l’intégration de solutions innovantes telles que Firebase, les outils cloud et certaines approches IoT.
+        Mon objectif est simple : transformer des idées et besoins métier en solutions digitales efficaces, utiles et durables.
+      </p>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="py-24 px-6 bg-slate-950">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-4xl font-bold mb-12 text-cyan-400 reveal">Services</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        
+        <div class="reveal card-hover bg-slate-900 border border-white/10 rounded-3xl p-8">
+          <h3 class="text-2xl font-bold mb-4">Création de sites web</h3>
+          <p class="text-slate-300">
+            Sites vitrines, institutionnels, éducatifs et professionnels modernes, responsives et optimisés.
+          </p>
+        </div>
+
+        <div class="reveal card-hover bg-slate-900 border border-white/10 rounded-3xl p-8">
+          <h3 class="text-2xl font-bold mb-4">Applications métiers</h3>
+          <p class="text-slate-300">
+            Développement de solutions de gestion adaptées aux besoins des entreprises et organisations.
+          </p>
+        </div>
+
+        <div class="reveal card-hover bg-slate-900 border border-white/10 rounded-3xl p-8">
+          <h3 class="text-2xl font-bold mb-4">Support & Digitalisation</h3>
+          <p class="text-slate-300">
+            Maintenance, réseaux, référencement, hébergement, accompagnement digital et mise en ligne.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="py-24 px-6 bg-slate-900">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-4xl font-bold mb-12 text-cyan-400 reveal">Compétences</h2>
+      <div class="grid md:grid-cols-2 gap-10">
+        
+        <div class="reveal bg-slate-950 border border-white/10 rounded-3xl p-8">
+          <h3 class="text-2xl font-bold mb-4">Développement Web & Logiciel</h3>
+          <p class="text-slate-300 leading-8">
+            HTML5, CSS3, JavaScript, React, Tailwind CSS, Bootstrap, Vite, PHP, Laravel, Node.js, Python, Firebase, VBA, WordPress, PrestaShop, Android Studio.
+          </p>
+        </div>
+
+        <div class="reveal bg-slate-950 border border-white/10 rounded-3xl p-8">
+          <h3 class="text-2xl font-bold mb-4">Systèmes, Réseaux & Données</h3>
+          <p class="text-slate-300 leading-8">
+            MySQL, PostgreSQL, Firestore, Microsoft Access, Hébergement Web, GitHub, SEO, Google Business, LAN, maintenance informatique, ThingsBoard, support technique.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="py-24 px-6 bg-slate-950">
+    <div class="max-w-7xl mx-auto">
+      <h2 class="text-4xl font-bold mb-12 text-cyan-400 reveal">Projets & Réalisations</h2>
+      <div class="grid md:grid-cols-2 xl:grid-cols-3 gap-8">
+
+        <a href="https://cvexpress-by-boris.web.app/" target="_blank" class="reveal card-hover bg-slate-900 border border-white/10 rounded-3xl p-8 block">
+          <h3 class="text-2xl font-bold mb-3">CVExpress</h3>
+          <p class="text-slate-300">Application web de création de CV avec export multi-formats.</p>
+        </a>
+
+        <a href="https://loyca-rh.web.app/login" target="_blank" class="reveal card-hover bg-slate-900 border border-white/10 rounded-3xl p-8 block">
+          <h3 class="text-2xl font-bold mb-3">LOYCA RH</h3>
+          <p class="text-slate-300">Application RH avec QR Code, géolocalisation et tableau de bord.</p>
+        </a>
+
+        <a href="https://rainsmore.github.io/" target="_blank" class="reveal card-hover bg-slate-900 border border-white/10 rounded-3xl p-8 block">
+          <h3 class="text-2xl font-bold mb-3">RAINSMORE</h3>
+          <p class="text-slate-300">Plateforme scientifique internationale orientée environnement.</p>
+        </a>
+
+        <a href="https://arioca-educ.com/" target="_blank" class="reveal card-hover bg-slate-900 border border-white/10 rounded-3xl p-8 block">
+          <h3 class="text-2xl font-bold mb-3">ARIOCA</h3>
+          <p class="text-slate-300">Plateforme éducative et scientifique.</p>
+        </a>
+
+        <a href="https://k-news24.com/" target="_blank" class="reveal card-hover bg-slate-900 border border-white/10 rounded-3xl p-8 block">
+          <h3 class="text-2xl font-bold mb-3">K-NEWS24</h3>
+          <p class="text-slate-300">Site d’actualités et média numérique.</p>
+        </a>
+
+        <a href="https://sportsandculturenetwork.com/" target="_blank" class="reveal card-hover bg-slate-900 border border-white/10 rounded-3xl p-8 block">
+          <h3 class="text-2xl font-bold mb-3">Sports & Culture Network</h3>
+          <p class="text-slate-300">Plateforme web dédiée à la culture et au sport.</p>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="py-24 px-6 bg-slate-900">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-4xl font-bold mb-12 text-cyan-400 reveal">Expériences Professionnelles</h2>
+      <div class="space-y-8">
+
+        <div class="reveal bg-slate-950 border border-white/10 rounded-3xl p-8">
+          <h3 class="text-2xl font-bold">Développeur Web – LOYCA RH</h3>
+          <p class="text-cyan-400 mb-3">Freelance | 2025 – Aujourd’hui</p>
+          <p class="text-slate-300">Conception d’une application RH avec pointage intelligent, QR Code, géolocalisation GPS, gestion des rôles et administration en temps réel.</p>
+        </div>
+
+        <div class="reveal bg-slate-950 border border-white/10 rounded-3xl p-8">
+          <h3 class="text-2xl font-bold">Développeur Web – IRD France / RAINSMORE</h3>
+          <p class="text-cyan-400 mb-3">2024</p>
+          <p class="text-slate-300">Développement d’une plateforme scientifique bilingue autour des données pluviométriques et environnementales.</p>
+        </div>
+
+        <div class="reveal bg-slate-950 border border-white/10 rounded-3xl p-8">
+          <h3 class="text-2xl font-bold">Développeur Web – ARIOCA</h3>
+          <p class="text-cyan-400 mb-3">Freelance | 2021 – Aujourd’hui</p>
+          <p class="text-slate-300">Conception, maintenance, mise en ligne et optimisation de la plateforme ARIOCA.</p>
+        </div>
+
+        <div class="reveal bg-slate-950 border border-white/10 rounded-3xl p-8">
+          <h3 class="text-2xl font-bold">Informaticien – TOUS SERVICES</h3>
+          <p class="text-cyan-400 mb-3">2022 – 2023</p>
+          <p class="text-slate-300">Site web, maintenance, réseau LAN, référencement Google Business et déploiement d’application de gestion client.</p>
+        </div>
+
+        <div class="reveal bg-slate-950 border border-white/10 rounded-3xl p-8">
+          <h3 class="text-2xl font-bold">Informaticien – CEREF.BTP</h3>
+          <p class="text-cyan-400 mb-3">2020 – 2022</p>
+          <p class="text-slate-300">Création du site web, référencement, formulaires numériques, bases de données et support informatique.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education" class="py-24 px-6 bg-slate-950">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-4xl font-bold mb-12 text-cyan-400 reveal">Formations & Certifications</h2>
+      <div class="grid md:grid-cols-2 gap-8">
+
+        <div class="reveal bg-slate-900 border border-white/10 rounded-3xl p-8">
+          <h3 class="text-2xl font-bold mb-4">Formations</h3>
+          <ul class="space-y-4 text-slate-300">
+            <li>DUT / Génie Informatique – IUT de Douala</li>
+            <li>Licence en Météorologie (en cours) – ENSPD</li>
+            <li>DQP Développement d’Applications Web – 2021</li>
+            <li>DQP Maintenance Réseaux Informatiques – 2018</li>
+          </ul>
+        </div>
+
+        <div class="reveal bg-slate-900 border border-white/10 rounded-3xl p-8">
+          <h3 class="text-2xl font-bold mb-4">Certifications</h3>
+          <ul class="space-y-4 text-slate-300">
+            <li>Cisco CCNA 1</li>
+            <li>Cisco CCNA 2</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY WORK WITH ME -->
+  <section class="py-24 px-6 bg-slate-900">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-4xl font-bold mb-12 text-cyan-400 reveal">Pourquoi travailler avec moi ?</h2>
+      <div class="grid md:grid-cols-2 xl:grid-cols-4 gap-6">
+        <div class="reveal bg-slate-950 border border-white/10 rounded-3xl p-6">Approche orientée résultat</div>
+        <div class="reveal bg-slate-950 border border-white/10 rounded-3xl p-6">Solutions adaptées aux besoins réels</div>
+        <div class="reveal bg-slate-950 border border-white/10 rounded-3xl p-6">Polyvalence technique</div>
+        <div class="reveal bg-slate-950 border border-white/10 rounded-3xl p-6">Accompagnement professionnel</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="py-24 px-6 bg-slate-950">
+    <div class="max-w-4xl mx-auto text-center reveal">
+      <h2 class="text-4xl font-bold mb-8 text-cyan-400">Contact</h2>
+      <p class="text-lg text-slate-300 mb-4">
+        Disponible pour projets web, solutions digitales, maintenance et collaboration technique.
+      </p>
+      <p class="text-xl mb-3">📧 <a href="mailto:franckenoto69530@gmail.com" class="text-cyan-400">franckenoto69530@gmail.com</a></p>
+      <p class="text-xl mb-6">📱 <a href="tel:+237695304318" class="text-cyan-400">+237 695 30 43 18</a></p>
+
+      <div class="flex justify-center gap-4 flex-wrap">
+        <a href="https://wa.me/237695304318" target="_blank" class="bg-green-500 text-white px-6 py-3 rounded-2xl font-bold hover:scale-105 transition">
+          WhatsApp
+        </a>
+        <a href="https://github.com/franckdev237" target="_blank" class="bg-white/10 px-6 py-3 rounded-2xl font-bold hover:bg-white/20 transition">
+          GitHub
+        </a>
+        <a href="https://franckdev237.github.io/franck-mengata.github.io/" target="_blank" class="bg-cyan-400 text-slate-950 px-6 py-3 rounded-2xl font-bold hover:scale-105 transition">
+          Voir mon portfolio
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="border-t border-white/10 py-8 text-center text-slate-400 bg-slate-950">
+    © 2026 — Franck Boris Mengata Enoto | Tous droits réservés.
+  </footer>
+
+  <!-- Fichier JS -->
+  <script src="js/main.js"></script>
+</body>
+</html>
